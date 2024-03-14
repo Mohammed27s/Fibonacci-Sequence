@@ -1,0 +1,53 @@
+
+//Fibonacci Sequence
+
+public class FibonacciSequence {
+
+    public static void main(String[] args){
+
+
+    Integer firstSequence = 5;
+    Integer secondSequence = 7;
+
+
+
+    System.out.println("Input: 5 Output: 5 Explanation: The sequence starts with 0, 1, 1, 2, 3, 5"+"\n");
+
+    for(Integer i = 0; i <= firstSequence; i++){
+
+        System.out.println(Fibonacci(i)+" "+"\n");
+    }
+
+
+
+    System.out.println("Input: 7 Output: 13 Explanation: The sequence starts with 0, 1, 1, 2, 3, 5, 8, 13"+"\n");
+
+    for(Integer j = 0; j <= secondSequence; j++){
+
+
+        System.out.println(Fibonacci(j)+" ");
+    }
+
+
+
+
+    }
+
+    public static Integer Fibonacci(Integer input){
+
+       if(input <= 1){
+
+           return input;
+       }
+
+       else {
+
+           return Fibonacci(input - 1) + Fibonacci(input - 2);
+       }
+
+    }
+
+
+
+}
+
